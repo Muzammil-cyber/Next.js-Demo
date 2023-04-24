@@ -22,18 +22,18 @@ export default function Home() {
         </nav></header>
         <section>
           <h1>Events</h1>
-          <div>
+          <div><a href='/events/new-york'>
             <h2>Event in New York</h2>
             <p>Suspendisse ligula elit, viverra tempor mi eu, hendrerit semper lorem. Nam finibus nulla at arcu posuere malesuada. Praesent sollicitudin lectus leo, ac rhoncus eros tristique vel. Pellentesque eu magna id metus dignissim aliquam quis eu lorem. Sed sit amet mi laoreet, varius turpis et, pulvinar nisi. Sed lobortis volutpat ipsum tristique faucibus. Donec ornare justo a ligula egestas malesuada. Nam vitae nulla eu nibh hendrerit condimentum non sed ligula. Fusce aliquet nunc magna, vel malesuada tortor sollicitudin quis. Donec vulputate quam ex, ut lacinia lectus iaculis vitae. </p>
-          </div>
-          <div>
+          </a></div>
+          <div><a href='/events/san-fransisco'>
             <h2>Event in San Francisco</h2>
             <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque sapien odio, vestibulum id rutrum quis, pulvinar nec diam. Nulla vitae sapien tincidunt, malesuada turpis quis, rutrum nisl. Sed aliquam vitae ante a mattis. Aliquam ac orci sodales, convallis tortor nec, aliquet metus. Maecenas mattis turpis at odio tristique venenatis. Praesent cursus ac justo in finibus. Quisque ultricies turpis at dui accumsan suscipit. Mauris congue luctus sapien at lobortis.</p>
-          </div>
-          <div>
+          </a></div>
+          <div><a href='/events/london'>
             <h2>Event in London</h2>
             <p>Quisque a dui tristique, ullamcorper felis in, dapibus odio. Morbi varius neque in aliquet ullamcorper. Fusce sed elit eros. Nulla volutpat hendrerit ante, sit amet elementum quam molestie ac. In hac habitasse platea dictumst. Phasellus pharetra iaculis mi sit amet convallis. Sed eu nisl non mi efficitur eleifend vel non dui. Praesent vehicula nibh metus, quis lobortis ligula ultrices at. In purus velit, tristique at eros ut, pharetra consectetur elit.</p>
-          </div>
+          </a></div>
         </section>
       </main>
       <footer>
