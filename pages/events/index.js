@@ -1,21 +1,27 @@
-const event = () => {
-    return (<div>
-        <h1>Events Page</h1>
-        <div>
-            <h2>Event in New York</h2>
-            <a href="/events/chrismas">On Chritsmas</a>
-            <a href="/events/new-year-eve">On New year</a>
+import Image from "next/image";
+import Link from "next/link";
 
-        </div>
+const Events = ({ events_categories }) => {
+    return (
         <div>
-            <h2>Event in San Francisco</h2>
-        </div>
-        <div>
-            <h2>Event in London</h2>
-        </div>
-    </div>
+            <h1>Events Page</h1>
+            {events_categories.map(e => <div key={e.id}><Link href={`events/${e.id}`} passHref>
+                <Image src={e.image} alt='An Image' width={600} height={400} />
 
-    )
+                <h2>{e.title}</h2>
+            </Link></div>)
+            }
+        </div>)
 }
 
-export default event;
+
+
+
+export default Events;
+
+export async function getStaticProps(context) {
+    const { events_categories } = await import("/data/data.json")
+    return {
+        props: { events_categories }
+    };
+}
