@@ -1,5 +1,7 @@
+import AboutUs from "@/src/components/AboutUs/AboutUs";
+
 export default function About() {
     return (
-        <h1>About Us</h1>
+        <AboutUs />
     )
 }

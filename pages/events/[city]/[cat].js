@@ -1,18 +1,14 @@
-import Image from "next/image";
+import Cat from "@/src/components/Events/City/Cat/Cat";
 
 
 
-const Event = ({ data }) => {
+const CatPage = ({ data }) => {
     return (
-        <div>
-            <Image src={data.image} alt='An Image' width={1000} height={500} />
-            <h1>{data.title}</h1>
-            <p>{data.description}</p>
-        </div>
+        <Cat data={data} />
     )
 }
 
-export default Event;
+export default CatPage;
 
 export async function getStaticPaths() {
     const { allEvents } = await import("/data/data.json");

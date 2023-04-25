@@ -1,24 +1,10 @@
-import Image from "next/image";
-import Link from "next/link";
+import City from "@/src/components/Events/City/City";
 
 
-export default function Page({ data, pageName }) {
+
+export default function CityPage({ data, pageName }) {
     return (
-        <div>
-            <h1>Events in {pageName}</h1>
-            {
-                data.map(e => (
-                    <div key={e.id}>
-                        <Link href={`/events/${e.city}/${e.id}`}>
-                            <Image src={e.image} alt='An Image' width={600} height={400} />
-                            <h2>{e.title}</h2>
-                            <p>{e.description}</p>
-                        </Link>
-
-                    </div >
-                ))
-            }
-        </div>
+        <City data={data} pageName={pageName} />
     )
 }
 
@@ -29,6 +15,7 @@ export async function getStaticPaths() {
     }))
 
     return {
+
         paths,
         fallback: false
     };
